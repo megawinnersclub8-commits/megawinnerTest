@@ -1,0 +1,136 @@
+.luxury-text {
+  position: relative;
+  display: inline-block;
+
+  line-height: 1.1;
+  letter-spacing: 8px;
+
+  color: #000;
+
+  /* Strong black outline */
+  -webkit-text-stroke: 3px #fff;
+
+  /* Depth + glow */
+  text-shadow:
+    0 2px 0 #000,
+    0 4px 6px rgba(0, 0, 0, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.luxury-text2 {
+  position: relative;
+  display: inline-block;
+
+  line-height: 1.1;
+  letter-spacing: 2px;
+
+  color: #acb4bf;
+
+  /* Strong black outline */
+  -webkit-text-stroke: 3px #fff;
+
+  /* Depth + glow */
+  text-shadow:
+    0 2px 0 #000,
+    0 4px 6px rgba(0, 0, 0, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.why-text {
+  /* Strong black outline */
+  -webkit-text-stroke: 0.2px #000;
+
+  /* Depth + bevel feel */
+  text-shadow:
+    0 1px 0 #000,
+    0 2px 0 #000,
+    0 3px 2px rgba(0, 0, 0, 0.6),
+    /* subtle highlight (top shine effect) */ 0 -1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.bonus-text {
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1.1;
+
+  /* MOBILE FIRST (lighter) */
+  -webkit-text-stroke: 0.1px #000;
+
+  text-shadow:
+    1px 1px 0 #000,
+    -1px 1px 0 #000,
+    1px -1px 0 #000,
+    -1px -1px 0 #000;
+
+  transform: rotate(-5deg);
+}
+
+/* 💻 Bigger screens → increase thickness */
+@media (min-width: 768px) {
+  .bonus-text {
+    -webkit-text-stroke: 1.5px #000;
+
+    text-shadow:
+      1.5px 1.5px 0 #000,
+      -1.5px 1.5px 0 #000,
+      1.5px -1.5px 0 #000,
+      -1.5px -1.5px 0 #000;
+  }
+}
+
+@media (min-width: 1280px) {
+  .bonus-text {
+    -webkit-text-stroke: 2px #000;
+
+    text-shadow:
+      2px 2px 0 #000,
+      -2px 2px 0 #000,
+      2px -2px 0 #000,
+      -2px -2px 0 #000;
+  }
+}
+
+/* 🎬 Jiggle */
+@keyframes jiggle {
+  0% {
+    transform: rotate(-5deg) scale(1);
+  }
+  25% {
+    transform: rotate(-6deg) scale(1.04);
+  }
+  50% {
+    transform: rotate(-4deg) scale(0.98);
+  }
+  75% {
+    transform: rotate(-6deg) scale(1.03);
+  }
+  100% {
+    transform: rotate(-5deg) scale(1);
+  }
+}
+
+.animate-jiggle {
+  animation: jiggle 1.5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: rotate(-5deg) scale(1);
+  }
+  25% {
+    transform: rotate(-6deg) scale(1.03);
+  }
+  50% {
+    transform: rotate(-4deg) scale(0.98);
+  }
+  75% {
+    transform: rotate(-6deg) scale(1.02);
+  }
+  100% {
+    transform: rotate(-5deg) scale(1);
+  }
+}
+
+.animate-float {
+  animation: float 1.5s infinite ease-in-out;
+}
