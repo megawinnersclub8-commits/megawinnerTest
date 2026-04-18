@@ -355,7 +355,7 @@ function App() {
               <img
                 src="/images/whatsapp-logo.png"
                 alt="whatsapp logo"
-                className="w-24 h-24 md:w-40 md:h-40 xl:w-72 xl:h-72 transition duration-300 group-hover:scale-105"
+                className="w-24 h-24 md:w-40 md:h-40 xl:w-72 xl:h-72 transition duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_20px_rgba(34,197,94,0.9)]"
               />
               <p className="mt-2 text-white font-cinzel font-extrabold text-sm md:text-lg xl:text-2xl transition duration-300 group-hover:scale-105">
                 WHATSAPP
@@ -372,7 +372,7 @@ function App() {
               <img
                 src="/images/telegram.png"
                 alt="telegram logo"
-                className="w-24 h-24 md:w-40 md:h-40 xl:w-72 xl:h-72 transition duration-300 group-hover:scale-105"
+                className="w-24 h-24 md:w-40 md:h-40 xl:w-72 xl:h-72 transition duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_20px_rgba(56,189,248,0.9)]"
               />
               <p className="mt-2 text-white font-cinzel font-extrabold text-sm md:text-lg xl:text-2xl transition duration-300 group-hover:scale-105">
                 TELEGRAM
