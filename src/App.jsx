@@ -62,7 +62,7 @@ const games = [
   {
     title: "GAME ROOM",
     image: "/images/GAME ROOM.png",
-    link: "https://www.gameroom777.club",
+    link: "https://www.gameroom777.com",
   },
   {
     title: "GAME VAULT",
