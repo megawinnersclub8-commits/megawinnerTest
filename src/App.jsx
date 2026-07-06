@@ -5,9 +5,9 @@ import { useEffect, useState, useRef } from "react";
 
 const offers = [
   { line1: "100% SIGN-UP", line2: "BONUS" },
-  { line1: "$30 REFERRAL", line2: "BONUS" },
+  { line1: "Up to $30 REFERRAL", line2: "BONUS" },
   { line1: "30% - 70%", line2: "DAILY BONUS" },
-  { line1: "$50 LOYALTY", line2: "BONUS" },
+  { line1: "Up to 50% LOYALTY", line2: "BONUS" },
   { line1: "BIRTHDAY", line2: "TREATS" },
   { line1: "5 DAYS STREAK", line2: "BONUS" },
   { line1: "HOLIDAY", line2: "BONUS" },
@@ -184,7 +184,7 @@ function App() {
         <div className="relative z-10 h-full w-full flex flex-col items-center justify-between py-16 px-4 text-center">
           {/* 🔝 TOP */}
           <h1 className="luxury-text2 font-cinzelDecorative text-xl md:text-3xl xl:text-5xl font-semibold text-white uppercase">
-            ABOUT US!!
+            ABOUT US!
           </h1>
 
           {/* 🟰 CENTER */}
