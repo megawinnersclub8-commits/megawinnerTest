@@ -100,6 +100,7 @@ function App() {
   const contactRef = useRef(null);
   const [showWhatsapp, setShowWhatsapp] = useState(true);
   const [activeIndex, setActiveIndex] = useState(null);
+  const [videoLoaded, setVideoLoaded] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -140,14 +141,27 @@ function App() {
   return (
     <div>
       {/* Home */}
-      <div className="relative h-screen flex items-center justify-center overflow-hidden">
+      <div className="relative h-screen flex items-center justify-center overflow-hidden bg-black">
+        {/* 🎨 Placeholder shown until video loads */}
+        <div
+          className={`absolute inset-0 bg-black transition-opacity duration-700 ${
+            videoLoaded ? "opacity-0" : "opacity-100"
+          }`}
+        >
+          {/* Optional: use a static poster image instead of plain color */}
+          {/* <img src="/images/home-poster.jpg" className="w-full h-full object-cover" alt="" /> */}
+        </div>
+
         {/* 🎬 Background Video */}
         <video
           autoPlay
           loop
           muted
           playsInline
-          className="absolute inset-0 w-full h-full object-cover"
+          onLoadedData={() => setVideoLoaded(true)}
+          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-700 ${
+            videoLoaded ? "opacity-100" : "opacity-0"
+          }`}
         >
           <source src="/videos/home.mp4" type="video/mp4" />
         </video>
