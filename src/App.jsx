@@ -184,7 +184,7 @@ function App() {
         <div className="relative z-10 h-full w-full flex flex-col items-center justify-between py-16 px-4 text-center">
           {/* 🔝 TOP */}
           <h1 className="luxury-text2 font-cinzelDecorative text-xl md:text-3xl xl:text-5xl font-semibold text-white uppercase">
-            ABOUT US!
+            ABOUT US!!
           </h1>
 
           {/* 🟰 CENTER */}
