@@ -32,7 +32,7 @@ const games = [
   {
     title: "VEGAS X",
     image: "/images/VEGAS X.png",
-    link: "https://vegas-x.org",
+    link: "https://Vegas-x.pro",
   },
   {
     title: "ULTRA PANDA",
